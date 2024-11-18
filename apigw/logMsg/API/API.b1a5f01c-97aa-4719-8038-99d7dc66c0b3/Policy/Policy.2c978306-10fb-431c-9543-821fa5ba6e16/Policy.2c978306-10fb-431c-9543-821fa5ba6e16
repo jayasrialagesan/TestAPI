@@ -1,0 +1,46 @@
+{
+  "id" : "2c978306-10fb-431c-9543-821fa5ba6e16",
+  "names" : [ {
+    "value" : "Default Policy for API logMsg",
+    "locale" : "English"
+  } ],
+  "descriptions" : [ {
+    "value" : "",
+    "locale" : "English"
+  } ],
+  "scope" : {
+    "scopeConditions" : [ ]
+  },
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "6e6bc177-a0b2-4809-9c9c-385935badb42",
+      "order" : "0"
+    }, {
+      "enforcementObjectId" : "28df2a8c-27e5-4a41-a56f-deb9f6853cbb",
+      "order" : "1"
+    } ],
+    "stageKey" : "routing"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "fdae8047-3866-449e-918f-2d037ca9ba0e",
+      "order" : "0"
+    } ],
+    "stageKey" : "LMT"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "85a390bd-f0f9-4af4-8816-1042f7820f3c",
+      "order" : "0"
+    } ],
+    "stageKey" : "IAM"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "778a254a-7ca1-4dbd-b7e7-61ba1571beb1",
+      "order" : "0"
+    } ],
+    "stageKey" : "transport"
+  } ],
+  "policyScope" : "SERVICE",
+  "active" : false,
+  "global" : false,
+  "systemPolicy" : false
+}

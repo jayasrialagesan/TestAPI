@@ -1,0 +1,16 @@
+{
+  "id" : "6e6bc177-a0b2-4809-9c9c-385935badb42",
+  "names" : [ {
+    "value" : "Straight Through Routing",
+    "locale" : "en"
+  } ],
+  "templateKey" : "straightThroughRouting",
+  "parameters" : [ {
+    "templateKey" : "endpointUri",
+    "values" : [ "http://wmdev-stdbvm26:5555/rad/Default.kishore.logMsg:logMsg_Descriptor/${sys:resource_path}" ]
+  }, {
+    "templateKey" : "method",
+    "values" : [ "CUSTOM" ]
+  } ],
+  "active" : false
+}

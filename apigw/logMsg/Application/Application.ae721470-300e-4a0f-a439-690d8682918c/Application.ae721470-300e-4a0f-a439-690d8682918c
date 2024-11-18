@@ -1,0 +1,38 @@
+{
+  "applicationID" : "ae721470-300e-4a0f-a439-690d8682918c",
+  "name" : "logMsg_App",
+  "owner" : "Administrator",
+  "ownerType" : "user",
+  "identifiers" : [ {
+    "id" : "6f95757e-db38-4b9a-a95c-8c25ab52c2cd",
+    "key" : "httpBasicAuth",
+    "swaggerName" : "",
+    "swaggerValue" : [ ],
+    "namedValues" : [ {
+      "name" : "Username",
+      "values" : [ "Administrator" ]
+    } ]
+  } ],
+  "contactEmails" : [ ],
+  "accessTokens" : {
+    "apiAccessKey" : {
+      "apiAccessKey" : "********************************"
+    }
+  },
+  "creationDate" : "2024-06-10 17:24:11 GMT",
+  "lastModified" : "2024-11-06 05:05:40 GMT",
+  "lastUpdated" : 1730869540703,
+  "siteURLs" : [ ],
+  "jsOrigins" : [ ],
+  "version" : "1.0",
+  "properties" : { },
+  "isSuspended" : false,
+  "customFields" : { },
+  "authStrategyIds" : [ ],
+  "primaryNode" : {
+    "hostId" : "9431610c-0851-4e4f-96d8-96fc0e2e212f",
+    "replica" : 0
+  },
+  "subscription" : false,
+  "shell" : false
+}

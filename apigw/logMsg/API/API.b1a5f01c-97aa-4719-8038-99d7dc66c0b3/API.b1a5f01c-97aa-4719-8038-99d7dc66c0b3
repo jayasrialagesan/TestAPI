@@ -1,0 +1,182 @@
+{
+  "apiDefinition" : {
+    "info" : {
+      "version" : "1.0",
+      "title" : "logMsg"
+    },
+    "basePath" : "",
+    "tags" : [ {
+      "name" : "logMsg_testing"
+    } ],
+    "schemes" : [ ],
+    "consumes" : [ "application/json" ],
+    "produces" : [ "application/json" ],
+    "security" : [ ],
+    "paths" : {
+      "/logMsg" : {
+        "get" : {
+          "operationId" : "logMsg_GET_1",
+          "parameters" : [ {
+            "name" : "logMsg_Input",
+            "in" : "query",
+            "required" : true,
+            "type" : "string",
+            "parameterSchema" : {
+              "type" : "string",
+              "readOnly" : false
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "OK",
+              "headersV3" : { },
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            },
+            "401" : {
+              "description" : "Access Denied",
+              "headersV3" : { },
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            }
+          },
+          "mockedResponses" : { },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ ],
+          "requestBody" : {
+            "content" : { },
+            "name" : "logMsg_GET_1"
+          }
+        },
+        "post" : {
+          "operationId" : "logMsg_POST_1",
+          "consumes" : [ "application/x-www-form-urlencoded" ],
+          "parameters" : [ ],
+          "responses" : {
+            "200" : {
+              "description" : "OK",
+              "headersV3" : { },
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            },
+            "401" : {
+              "description" : "Access Denied",
+              "headersV3" : { },
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            }
+          },
+          "mockedResponses" : { },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ ],
+          "requestBody" : {
+            "content" : {
+              "application/x-www-form-urlencoded" : {
+                "schema" : {
+                  "type" : "gateway",
+                  "schema" : "{\"type\":\"object\",\"properties\":{\"logMsg_Input\":{\"type\":\"string\",\"readOnly\":false}}}"
+                },
+                "examples" : { }
+              }
+            },
+            "name" : "logMsg_POST_1"
+          }
+        },
+        "parameters" : [ ],
+        "scopes" : [ ],
+        "tags" : [ "logMsg_testing" ],
+        "displayName" : "/logMsg",
+        "enabled" : true
+      },
+      "/logMsg2" : {
+        "get" : {
+          "parameters" : [ ],
+          "responses" : { },
+          "mockedResponses" : { },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ ],
+          "requestBody" : {
+            "content" : { },
+            "name" : "requestBody"
+          }
+        },
+        "post" : {
+          "parameters" : [ ],
+          "responses" : { },
+          "mockedResponses" : { },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ ],
+          "requestBody" : {
+            "content" : { },
+            "name" : "requestBody"
+          }
+        },
+        "parameters" : [ ],
+        "scopes" : [ ],
+        "displayName" : "logMsg2",
+        "enabled" : true
+      }
+    },
+    "securityDefinitions" : { },
+    "definitions" : { },
+    "parameters" : { },
+    "baseUriParameters" : [ ],
+    "externalDocs" : [ ],
+    "servers" : [ {
+      "url" : "http://wmdev-stdbvm26:5555/rad/Default.kishore.logMsg:logMsg_Descriptor",
+      "variables" : { }
+    } ],
+    "components" : {
+      "schemas" : { },
+      "responses" : { },
+      "parameters" : { },
+      "examples" : { },
+      "requestBodies" : { },
+      "headers" : { },
+      "links" : { },
+      "callbacks" : { }
+    },
+    "type" : "rest"
+  },
+  "nativeEndpoint" : [ {
+    "passSecurityHeaders" : true,
+    "uri" : "http://wmdev-stdbvm26:5555/rad/Default.kishore.logMsg:logMsg_Descriptor",
+    "connectionTimeoutDuration" : 0,
+    "alias" : false
+  } ],
+  "apiName" : "logMsg",
+  "apiVersion" : "2.0",
+  "maturityState" : "Beta",
+  "isActive" : true,
+  "type" : "REST",
+  "owner" : "Administrator",
+  "policies" : [ "2c978306-10fb-431c-9543-821fa5ba6e16" ],
+  "referencedFiles" : {
+    "logMsg_SB_Dev.swagger" : "swagger: \"2.0\"\ninfo:\n  version: \"1.0\"\n  title: \"logMsg\"\nhost: \"wmdev-stdbvm26:5555\"\nbasePath: \"/rad/Default.kishore.logMsg:logMsg_Descriptor\"\nschemes:\n- \"http\"\nconsumes:\n- \"application/json\"\nproduces:\n- \"application/json\"\npaths:\n  /logMsg:\n    get:\n      operationId: \"logMsg_GET_1\"\n      parameters:\n      - name: \"logMsg_Input\"\n        in: \"query\"\n        required: true\n        type: \"string\"\n      responses:\n        \"200\":\n          description: \"OK\"\n        \"401\":\n          description: \"Access Denied\"\n    post:\n      operationId: \"logMsg_POST_1\"\n      consumes:\n      - \"application/x-www-form-urlencoded\"\n      parameters:\n      - name: \"logMsg_Input\"\n        in: \"formData\"\n        required: true\n        type: \"string\"\n      responses:\n        \"200\":\n          description: \"OK\"\n        \"401\":\n          description: \"Access Denied\"\n"
+  },
+  "tracingEnabled" : false,
+  "scopes" : [ ],
+  "publishedPortals" : [ ],
+  "creationDate" : "2024-10-14 15:14:42 GMT",
+  "prevVersion" : "c4188237-6f10-4fd6-886e-91a4df26a740",
+  "systemVersion" : 2,
+  "gatewayEndpoints" : { },
+  "deployments" : [ "APIGateway" ],
+  "id" : "b1a5f01c-97aa-4719-8038-99d7dc66c0b3"
+}

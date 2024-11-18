@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<asset_composite name="APIGatewayAssets" displayName="Assets for API Gateway" runtimeVersion="10.15" targetNamespace="http://namespaces.softwareag.com/webMethods/APIGateway" xmlns="http://namespaces.softwareag.com/acdl/1.0" xmlns:EDA="http://namespaces.softwareag.com/webMethods/EDA" xmlns:MWS="http://namespaces.softwareag.com/webMethods/MWS" xmlns:IS="http://namespaces.softwareag.com/webMethods/IS" xmlns:APIPORTAL="http://namespaces.softwareag.com/webMethods/APIPORTAL" xmlns:AgileApps="http://namespaces.softwareag.com/webMethods/AgileApps" xmlns:BROKER="http://namespaces.softwareag.com/webMethods/BROKER" xmlns:implDetails="http://namespaces.softwareag.com/acdl/implDetails" xmlns:UniversalMessaging="http://namespaces.softwareag.com/webMethods/UniversalMessaging" xmlns:TN="http://namespaces.softwareag.com/webMethods/TN" xmlns:RULES="http://namespaces.softwareag.com/webMethods/RULES" xmlns:BPM="http://namespaces.softwareag.com/webMethods/BPM" xmlns:Optimize="http://namespaces.softwareag.com/webMethods/Optimize">
+    <buildInfo name="BuildTimestamp" value="2024-11-08T18:24:18"/>
+    <asset name="API.b1a5f01c-97aa-4719-8038-99d7dc66c0b3" displayName="logMsg[2.0]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Application.ae721470-300e-4a0f-a439-690d8682918c</dependsOn>
+        <dependsOn>APIGateway:Policy.2c978306-10fb-431c-9543-821fa5ba6e16</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.ae721470-300e-4a0f-a439-690d8682918c</dependsOn>
+    </asset>
+    <asset name="Policy.2c978306-10fb-431c-9543-821fa5ba6e16" displayName="Policy For API logMsg[2.0]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.28df2a8c-27e5-4a41-a56f-deb9f6853cbb</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.6e6bc177-a0b2-4809-9c9c-385935badb42</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.778a254a-7ca1-4dbd-b7e7-61ba1571beb1</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.85a390bd-f0f9-4af4-8816-1042f7820f3c</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.fdae8047-3866-449e-918f-2d037ca9ba0e</dependsOn>
+    </asset>
+    <asset name="PolicyAction.6e6bc177-a0b2-4809-9c9c-385935badb42" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API logMsg[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.28df2a8c-27e5-4a41-a56f-deb9f6853cbb" displayName="Policy Action [Outbound Auth - Transport] -&gt; Policy For API logMsg[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.fdae8047-3866-449e-918f-2d037ca9ba0e" displayName="Policy Action [Traffic Optimization] -&gt; Policy For API logMsg[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.85a390bd-f0f9-4af4-8816-1042f7820f3c" displayName="Policy Action [Identify &amp; Authorize] -&gt; Policy For API logMsg[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.778a254a-7ca1-4dbd-b7e7-61ba1571beb1" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API logMsg[2.0]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="Application.ae721470-300e-4a0f-a439-690d8682918c" displayName="logMsg_App" isDeployable="true">
+        <implementation.generic type="Application"/>
+        <dependsOn>APIGateway:PassmanData.API_ACCESS_KEYae721470-300e-4a0f-a439-690d8682918c</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.ae721470-300e-4a0f-a439-690d8682918c</dependsOn>
+    </asset>
+    <asset name="PassmanData.API_ACCESS_KEYae721470-300e-4a0f-a439-690d8682918c" displayName="API_ACCESS_KEYae721470-300e-4a0f-a439-690d8682918c" isDeployable="true">
+        <implementation.generic type="PassmanData"/>
+    </asset>
+    <asset name="RegisteredApplication.ae721470-300e-4a0f-a439-690d8682918c" displayName="RegisteredApplication [ logMsg_App ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+</asset_composite>
